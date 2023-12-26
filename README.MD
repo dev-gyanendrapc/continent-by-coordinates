@@ -1,5 +1,3 @@
-markdown
-Copy code
 # Continent-by-coordinates
 
 [![npm version](https://badge.fury.io/js/continent-by-coordinates.svg)](https://badge.fury.io/js/continent-by-coordinates)
@@ -10,38 +8,24 @@ A simple npm package that helps you find the continent name by providing longitu
 
 ```bash
 npm install continent-by-coordinates
-Usage
-javascript
-Copy code
-const continentByCoordinates = require('continent-by-coordinates');
+
+### Usage javascript
+import {getContinentName} from 'continent-by-coordinates';
 
 const longitude = 45.1234;
 const latitude = 23.5678;
 
-const continent = continentByCoordinates(longitude, latitude);
+const continent = getContinentName(longitude, latitude);
 
 console.log(`The coordinates are in ${continent}.`);
-API
+### API
 continentByCoordinates(longitude: number, latitude: number): string
 Returns the continent name for the given longitude and latitude.
 
-longitude: The longitude coordinate.
-latitude: The latitude coordinate.
-Example
-javascript
-Copy code
-const continentByCoordinates = require('continent-by-coordinates');
-
-const longitude = 45.1234;
-const latitude = 23.5678;
-
-const continent = continentByCoordinates(longitude, latitude);
-
-console.log(`The coordinates are in ${continent}.`);
-Contributing
+### Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 
-License
+### License
 This project is licensed under the ISC License - see the LICENSE file for details.
 
 Author
